@@ -5,7 +5,6 @@ using Algorithms;
 Console.WriteLine("Enter a word, number or phrase...\n");
 var input = Console.ReadLine(); 
 
-//converting characters to lower case
 var checker = new PalindromeChecker();
 var check = checker.Check(input);
 
