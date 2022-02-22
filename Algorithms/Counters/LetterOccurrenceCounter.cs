@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Algorithms.Counters;
 
 namespace Algorithms
 {
-    public class LetterOccurrenceCounter
+    public class LetterOccurrenceCounter : ICounter
     {
-
         public string Count(string str)
         {
             while (str.Length > 0)

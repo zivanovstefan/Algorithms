@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Algorithms.Counters;
+using Algorithms.Filters;
 
 namespace Algorithms
 {
@@ -10,8 +12,8 @@ namespace Algorithms
     {
         public string OptionProcess(string word, string option)
         {
-            var counter = new LetterOccurrenceCounter();
-            var filter = new DuplicateFilter();
+            ICounter counter = new LetterOccurrenceCounter();
+            IFilter filter = new DuplicateFilter();
 
             if (option == "a")
             {

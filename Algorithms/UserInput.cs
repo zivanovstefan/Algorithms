@@ -16,7 +16,7 @@ namespace Algorithms
         }
         public string GetOption()
         {
-            Console.WriteLine("Choose [a] for letter occurrence count or [b] for filter");
+            Console.WriteLine("Choose [a] for letter occurrence count or [b] for filtered string without duplicates");
             string option = Console.ReadLine();
             return option;
         }

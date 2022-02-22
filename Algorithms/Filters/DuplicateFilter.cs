@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Algorithms.Filters;
 
 namespace Algorithms
 {
-    public class DuplicateFilter
+    public class DuplicateFilter : IFilter
     {
         public string Filter(string s)
         {
