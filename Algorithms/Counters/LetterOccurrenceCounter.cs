@@ -25,7 +25,7 @@ namespace Algorithms
                 str = str.Replace(str[0].ToString(), string.Empty);
                 Console.WriteLine(count);
             }
-            return Console.ReadLine();
+            return str;
         }
     }
 }
