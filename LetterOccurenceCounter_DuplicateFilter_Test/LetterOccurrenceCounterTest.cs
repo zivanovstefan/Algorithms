@@ -11,7 +11,7 @@ namespace LetterOccurenceCounter_DuplicateFilter_Test
         {
             //Arrange
             var userString = "aaaaa";
-            var expectedResult = new LetterOccurrenceCounter().Count(userString);
+            var expectedResult = "a5";
             //Act
             var actualResult = new LetterOccurrenceCounter().Count(userString);
             //Assert
