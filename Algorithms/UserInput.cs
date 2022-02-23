@@ -10,9 +10,16 @@ namespace Algorithms
     {
         public string GetInput()
         {
-            Console.WriteLine("Enter a word, number or phrase...\n");
-            var input = Console.ReadLine();
+            string input;
+            do 
+            {
+                Console.WriteLine("Enter a word, number or phrase...");
+                input = Console.ReadLine();
+                
+            }while (string.IsNullOrEmpty(input));
+
             return input;
         }
     }
 }
+
