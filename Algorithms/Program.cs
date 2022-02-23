@@ -1,11 +1,10 @@
 ﻿using System;
 using Algorithms;
 
-// Asking the user to enter a word, number or phrase
-Console.WriteLine("Enter a word, number or phrase...\n");
-var input = Console.ReadLine(); 
+var input = new UserInput();
+var word = input.GetInput();
 
 var checker = new PalindromeChecker();
-var check = checker.Check(input);
+var check = checker.Check(word);
 
 Console.WriteLine(check);
